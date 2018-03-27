@@ -1,0 +1,39 @@
+/* style.css */
+body{
+  background: #F0F0F0;
+  color: #000000;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+}
+
+#title {
+  color: #000000;
+  font-size: 50px;
+  font-weight: bolder;
+  font-family: 'Pacifico', cursive;
+ }
+
+nav{
+  font-size: 30px;
+  color: #BFA372;
+}
+
+h1{
+  color: #646464;
+  font-size: 26px;
+  font-family: 'Pacifico', cursive;
+}
+
+h2 {
+  color: #BFA372;
+  font-weight: bolder;
+  font-size: 24px;
+}
+a {
+  color: #75A2E6;
+}
+a:hover {
+  text-decoration: dotted #000000;
+  color: #265396;
+}
