@@ -8,27 +8,31 @@ body{
   margin:0;
 }
 
-nav{
-  display:inline;
+/* Mise en forme de la barre de navigation */
+nav {
+  display: inline;
   font-size: 1em;
   font-family: 'Source Sans Pro', sans-serif;
 } 
 
-h1{
-  font-family: 'Roboto', sans-serif;
-  color:  #41A3C0; 
-  font-weight: bolder;
-  font-size: 2em;
-}
-
 nav li {
   margin: 10px;
-  display:inline;
+  display: inline;
+}
+
+nav a {
+  color: #52E3ED;
+}
+
+nav a:hover {
+  color: #19F0FF;
+  border-bottom: 1px dotted;
 }
 
 nav ul {
   float: left;
   margin-top: 25px;
+ 
 }
 
 #logo{
@@ -40,9 +44,33 @@ nav ul {
   text-shadow: 1px 1px 5px #5A5A5A;
 }
 
+.social img {
+ width: 30px;
+}
+
+.social {
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.social a:hover {
+  border-bottom: none;
+}
+
+/* Mise en forme textes*/
+
+h1{
+  font-family: 'Roboto', sans-serif;
+  color:  #41A3C0; 
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+
 h2 {
   font-family: 'Pacifico', cursive;
-  color: #3b4563;
+  color: #46ADB3;
   font-weight: lighter;
   font-size: 1.5em;
 }
@@ -52,18 +80,20 @@ p{
 }
 
 a { 
-  color: #29324B;
+  color: #46ADB3;
+  text-decoration: none;
 }
 
 a:hover {
   text-decoration: none;
-  color: #1F6B75;
+  color: #60BFC4;
 }
 
 
 /* Mise en forme de la baseline */
 #baseline{
-  background: #5FC0CE;
+  background: #474747;
+  background-image: url(background.jpg);
   text-align: center;
   background-size: cover;
   padding: 150px;
@@ -88,17 +118,19 @@ a:hover {
   top:1px;
 }
 
- .feature {
-   border: 3px dotted #EEEEEE;
-   margin: 15px;
-   padding: 15px 0;
-   text-align: center;
-   width: 400px;
-   background: #FAFAFA;
-   box-shadow: 1px 1px 1px #E3E3E3;
+.feature {
+  border: 3px dotted #EEEEEE;
+  margin: 15px;
+  padding: 15px 0;
+  text-align: center;
+  width: 400px;
+  background: #FAFAFA;
+  box-shadow: 1px 1px 1px #E3E3E3;
+
  }
 
- #apropos{
+/* Mise en forme des défis  */
+ #apropos {
   margin: 0 auto;
   width: 80%;
   display:flex;
@@ -106,27 +138,24 @@ a:hover {
   justify-content: center;
 }
 
-#download{
+#download {
   text-align: center;
   color: #656565;
 }
 
-#credit{
+#credit {
   text-align: center;
   color: #274E7B;
 }
 
-.orange {
-  color: #FBAF78;
-}
-
-.image {
+.iframe {
   box-shadow: 3px 3px 3px #E3E3E3;
 
 }
 
 #welcome{
-background: #5FC0CE;
+  background: #474747;
+  background-image: url(background.jpg);
   text-align: center;
   background-size: cover;
   padding: 150px;
@@ -139,11 +168,24 @@ background: #5FC0CE;
 }
 
 #defis {
-   border: 3px dotted #EEEEEE;
-   margin: 15px;
-   padding: 15px 0;
-   text-align: center;
-   width: 400px;
-   background: #FAFAFA;
-   box-shadow: 1px 1px 1px #E3E3E3;
+  margin: 0 auto;
+  width: 80%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
  }
+
+.defi {
+  border: 3px dotted #EEEEEE;
+  border: 3px dotted #EEEEEE;
+  margin: 15px;
+  padding: 15px 0;
+  text-align: center;
+  width: 400px;
+  background: #FAFAFA;
+  box-shadow: 1px 1px 1px #E3E3E3;
+}
+
+ #var name {
+  color: #8e9bac;
+}

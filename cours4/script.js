@@ -2,13 +2,14 @@ $( document ).ready(function() {
 
  function welcome() {
     var name= getUsername();
-    $("#welcome").html('<h4>Bienvenue '+name+', <br> soyez pret à renouveler de nouveaux défis ! </h4>');
+    $("#welcome").html('<h4>Bienvenue '+name+', <br> soyez prêt à relever de nouveaux défis ! </h4>');
 
 };
+
 // Appel la fonction
 welcome();
 
-$("img").addClass('image');
+$("iframe").addClass('iframe');
 
 	function getUsername() {
     	//affiche une boite de dialogue 
@@ -17,9 +18,10 @@ $("img").addClass('image');
     	return user
 }
 
+
 function loadChallenges() {
   $.ajax(
-        {url : 'https://s3.eu-central-1.amazonaws.com/spintransfer/challenge.json',
+        {url : 'https://api.myjson.com/bins/zr86z',
         type: 'GET',
         dataType: 'json'} 
   )
